@@ -1,5 +1,8 @@
 #Calculadore funcional con operaciones basicas como suma, resta, multiplicacion, division
-import
+from suma import suma
+from resta import resta
+from multiplicacion import multiplicacion
+from division import division   
 
 mensaje = '''
 |-----------------|
@@ -13,19 +16,23 @@ mensaje = '''
 def init():
     print(mensaje)
 
-    opcion = int(input("Eliga una de las opciones de la calculadora"))
+    opcion = int(input("Eliga una de las opciones de la calculadora: "))
 
     operando = True
 
     while operando == True:
         if opcion == 1:
-            def suma()
+            suma()
+            break
         elif opcion == 2:
-            def resta()
+            resta()
+            break
         elif opcion == 3:
-            def multiplicacion()
+            multiplicacion()
+            break
         elif opcion == 4:
-            def division()
+            division()
+            break
         else:
             print("Opcion incorrecta")
 
